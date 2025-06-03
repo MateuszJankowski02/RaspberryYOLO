@@ -39,7 +39,7 @@ class JpegStream:
     async def stream_jpeg(self):
         self.picam2 = Picamera2()
         video_config = self.picam2.create_video_configuration(
-            main={"size": (1920, 1080)}
+            main={"size": (640, 640)}
         )
         self.picam2.configure(video_config)
         output = StreamingOutput()
