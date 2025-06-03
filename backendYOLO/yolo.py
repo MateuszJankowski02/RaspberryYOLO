@@ -34,7 +34,7 @@ class JpegStream:
         self.connections = set()
         self.picam2 = None
         self.task = None
-        self.model = YOLO("yolov8n_ncnn_model")  # Load the YOLOv8 model
+        self.model = YOLO("yolo11n_ncnn_model")  # Load the YOLOv11 model
 
     async def stream_jpeg(self):
         self.picam2 = Picamera2()
